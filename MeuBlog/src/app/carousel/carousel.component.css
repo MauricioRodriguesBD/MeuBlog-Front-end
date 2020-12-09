@@ -1,0 +1,27 @@
+.backgroundcaro{
+
+    background-image: url('https://i0.wp.com/www.inthewritingzone.com/wp-content/uploads/2018/04/space-dreams.jpg?fit=945%2C630');
+    height: 600px;
+    width: 900px;
+}
+.backgroundcaro1{
+    background-image: url('https://segredosdomundo.r7.com/wp-content/uploads/2019/06/10-lugares-do-planeta-terra-com-o-ceu-estrelado-mais-bonito-de-ver-10.jpg');
+}
+
+.cartao{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 200px!important;
+}

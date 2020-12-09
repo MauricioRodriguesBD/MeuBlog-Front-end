@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { User } from '../model/User';
 import { Userlogin } from '../model/UserLogin';
 
@@ -9,12 +10,14 @@ import { Userlogin } from '../model/UserLogin';
 export class AuthService {
 
   constructor(private http: HttpClient) { }
-  logar(userLogin: Userlogin){
-    return this.http.post('http://localhost:9000/usuarios/logar', userLogin)
+  logar(userLogin: Userlogin): Observable<Userlogin>{
+    return this.http.post<Userlogin>('http://localhost:9000/usuarios/logar', userLogin)
   }
-  cadastrar(user:User){
-    return this.http.post('http://localhost:9000/usuarios/cadastrar', user)
+  cadastrar(user:User) : Observable<User>{
+    return this.http.post<User>('http://localhost:9000/usuarios/cadastrar', user)
   }
+
+
   btnSair(){
     let ok = false
     let token = localStorage.getItem('token')

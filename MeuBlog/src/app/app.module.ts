@@ -13,6 +13,7 @@ import { FeedComponent } from './feed/feed.component';
 import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     PerfilLateralComponent,
     LoginComponent,
     CadastroComponent,
+    CarouselComponent,
     
   ],
   imports: [
